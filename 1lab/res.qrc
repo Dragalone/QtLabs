@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/play-button-arrowhead.png</file>
+        <file>img/pause.png</file>
+        <file>img/stop.png</file>
+        <file>img/free-icon-fast-forward-7881795.png</file>
+        <file>img/free-icon-rewind-7881840.png</file>
+        <file>img/png-transparent-vlc-media-player-codec-logo-computer-file-cones-orange-media-player-product.png</file>
+        <file>img/file_icon.png</file>
+        <file>img/disk_icon.png</file>
+        <file>img/exit_icon.png</file>
+        <file>img/www.png</file>
+        <file>img/dot_icon.png</file>
+        <file>img/v_down_icon.png</file>
+        <file>img/v_up_icon.png</file>
+        <file>img/mute_icon.png</file>
+        <file>img/filters_icon.png</file>
+        <file>img/settings_icon.png</file>
+        <file>img/VLC-Logo.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Видеопроигрыватель</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0,0">
+    <item row="3" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,12,0,2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/play-button-arrowhead.png</normaloff>:/img/img/play-button-arrowhead.png</iconset>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/free-icon-rewind-7881840.png</normaloff>:/img/img/free-icon-rewind-7881840.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/pause.png</normaloff>:/img/img/pause.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/free-icon-fast-forward-7881795.png</normaloff>:/img/img/free-icon-fast-forward-7881795.png</iconset>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/stop.png</normaloff>:/img/img/stop.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>93</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/img/img/v_up_icon.png</normaloff>:/img/img/v_up_icon.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Sans Serif</family>
+         </font>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string notr="true"/>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/img/img/VLC-Logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>--|--</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="horizontalSlider_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>--|--</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Медиа</string>
+    </property>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="action_7"/>
+    <addaction name="action_URL"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="separator"/>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="action_13"/>
+    <addaction name="separator"/>
+    <addaction name="action_15"/>
+    <addaction name="action_16"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Воспроизведение</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="action_10"/>
+    <addaction name="action_14"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Аудио</string>
+    </property>
+    <widget class="QMenu" name="menu_9">
+     <property name="title">
+      <string>Аудиоустройство</string>
+     </property>
+     <addaction name="action_50"/>
+     <addaction name="action_51"/>
+    </widget>
+    <addaction name="action_17"/>
+    <addaction name="menu_9"/>
+    <addaction name="action_19"/>
+    <addaction name="separator"/>
+    <addaction name="action_20"/>
+    <addaction name="separator"/>
+    <addaction name="action_21"/>
+    <addaction name="action_24"/>
+    <addaction name="action_25"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Видео</string>
+    </property>
+    <addaction name="action_26"/>
+    <addaction name="separator"/>
+    <addaction name="action_27"/>
+    <addaction name="action_28"/>
+    <addaction name="action_30"/>
+    <addaction name="separator"/>
+    <addaction name="action_32"/>
+    <addaction name="action_33"/>
+    <addaction name="action_34"/>
+    <addaction name="separator"/>
+    <addaction name="action_36"/>
+    <addaction name="action_37"/>
+    <addaction name="separator"/>
+    <addaction name="action_39"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Субтитры</string>
+    </property>
+    <addaction name="action_40"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <addaction name="action_41"/>
+    <addaction name="action_42"/>
+    <addaction name="action_43"/>
+    <addaction name="action_44"/>
+    <addaction name="action_VLM"/>
+    <addaction name="action_EPG"/>
+    <addaction name="action_45"/>
+    <addaction name="action_46"/>
+    <addaction name="separator"/>
+    <addaction name="action_48"/>
+    <addaction name="action_49"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="action_52"/>
+    <addaction name="action_53"/>
+    <addaction name="separator"/>
+    <addaction name="action_55"/>
+    <addaction name="separator"/>
+    <addaction name="action_58"/>
+    <addaction name="action_59"/>
+    <addaction name="action_60"/>
+    <addaction name="action_61"/>
+    <addaction name="separator"/>
+    <addaction name="action_63"/>
+    <addaction name="separator"/>
+    <addaction name="actionVLub"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="action_65"/>
+    <addaction name="action_66"/>
+    <addaction name="separator"/>
+    <addaction name="action_68"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+  </widget>
+  <action name="action_4">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/file_icon.png</normaloff>:/img/img/file_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть файл...</string>
+   </property>
+   <property name="toolTip">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/file_icon.png</normaloff>:/img/img/file_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть файлы...</string>
+   </property>
+   <property name="toolTip">
+    <string>Ctrl+Shift+O</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/file_icon.png</normaloff>:/img/img/file_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть папку...</string>
+   </property>
+   <property name="toolTip">
+    <string>Ctrl+F</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/disk_icon.png</normaloff>:/img/img/disk_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть диск...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_URL">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/www.png</normaloff>:/img/img/www.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть URL...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>Открыть устройство захвата...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>Открыть адрес из буфера обмена...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>Сохранить плейлист как...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>Конвертировать/сохранить...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>Передавать...</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>Выход по окончании плейлиста</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/exit_icon.png</normaloff>:/img/img/exit_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/play-button-arrowhead.png</normaloff>:/img/img/play-button-arrowhead.png</iconset>
+   </property>
+   <property name="text">
+    <string>Воспроизвести</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/stop.png</normaloff>:/img/img/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Стоп</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/free-icon-rewind-7881840.png</normaloff>:/img/img/free-icon-rewind-7881840.png</iconset>
+   </property>
+   <property name="text">
+    <string>Предыдущий</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/free-icon-fast-forward-7881795.png</normaloff>:/img/img/free-icon-fast-forward-7881795.png</iconset>
+   </property>
+   <property name="text">
+    <string>Следующий</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/dot_icon.png</normaloff>:/img/img/dot_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Запись</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>Аудиодорожка</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>Режим стерео</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>Визуализация</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/v_up_icon.png</normaloff>:/img/img/v_up_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Увеличить громкость</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/v_down_icon.png</normaloff>:/img/img/v_down_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Уменьшить громкость</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/mute_icon.png</normaloff>:/img/img/mute_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выключить звук</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>Видеодорожка</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>Во весь экран</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>Подгонять под окно</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="text">
+    <string>Фон рабочего стола</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="text">
+    <string>Масштаб</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>Соотношение сторон</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="text">
+    <string>Кадрирование</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>Устранение чересстрочности</string>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>Режим устранения</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>Сделать снимок</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string> Добавить файл субтитров</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/filters_icon.png</normaloff>:/img/img/filters_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Эффекты и фильтры</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>Синхронизация дорожек</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>Информация о медиафайле</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_44">
+   <property name="text">
+    <string>Информация о кодеке</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_VLM">
+   <property name="text">
+    <string>Конфигурация VLM</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+W</string>
+   </property>
+  </action>
+  <action name="action_EPG">
+   <property name="text">
+    <string>Гид по программам(EPG)</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>Сообщения</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="text">
+    <string>Модули и расширения</string>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/settings_icon.png</normaloff>:/img/img/settings_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройка интерфейса...</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/img/settings_icon.png</normaloff>:/img/img/settings_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_50">
+   <property name="text">
+    <string>по умолчанию</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>Динамики</string>
+   </property>
+  </action>
+  <action name="action_52">
+   <property name="text">
+    <string>Плейлист  </string>
+   </property>
+  </action>
+  <action name="action_53">
+   <property name="text">
+    <string>Встроенный плейлист</string>
+   </property>
+  </action>
+  <action name="action_55">
+   <property name="text">
+    <string>Поверх всех окон</string>
+   </property>
+  </action>
+  <action name="action_58">
+   <property name="text">
+    <string>Мини-интерфейс</string>
+   </property>
+  </action>
+  <action name="action_59">
+   <property name="text">
+    <string>Полноэкранный режим</string>
+   </property>
+  </action>
+  <action name="action_60">
+   <property name="text">
+    <string>Доп.элементы управления</string>
+   </property>
+  </action>
+  <action name="action_61">
+   <property name="text">
+    <string>Строка состояния</string>
+   </property>
+  </action>
+  <action name="action_63">
+   <property name="text">
+    <string>Добавить интерфейс</string>
+   </property>
+  </action>
+  <action name="actionVLub">
+   <property name="text">
+    <string>VLub</string>
+   </property>
+  </action>
+  <action name="action_65">
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
+  <action name="action_66">
+   <property name="text">
+    <string>Проверить обновления</string>
+   </property>
+  </action>
+  <action name="action_68">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_4</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_5</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_6</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_URL</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_8</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMsg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showMsg()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,12 @@
+#ifndef LOGINWIDGET_GLOBAL_H
+#define LOGINWIDGET_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LOGINWIDGET_LIBRARY)
+#  define LOGINWIDGET_EXPORT Q_DECL_EXPORT
+#else
+#  define LOGINWIDGET_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LOGINWIDGET_GLOBAL_H
